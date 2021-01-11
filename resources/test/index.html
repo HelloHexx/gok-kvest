@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+</head>
+
+<body>
+
+    <div id="appearance7"></div>
+    <div>
+        <progress id="pg" value="<число>" max="100">
+            Текст
+        </progress>
+    </div>
+
+    <script>
+        $("#appearance7").roundSlider({
+            radius: 80,
+            width: 8,
+            handleSize: "+16",
+            handleShape: "dot",
+            sliderType: "min-range",
+            value: 0,
+            beforeCreate: "traceEvent",
+            create: "traceEvent",
+            start: "traceEvent",
+            stop: "traceEvent",
+            change: "traceEvent",
+            drag: "traceEvent"
+        });
+
+        function traceEvent(e) {
+            let prog = document.getElementById('pg')
+            prog.value = e.value;
+            console.log(e.value);
+
+        }
+    </script>
+
+</body>
+
+</html>
