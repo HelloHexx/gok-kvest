@@ -1,0 +1,5 @@
+{
+    "cookie_set": [{ "t": "Cookie set true", "code": "001" },
+        { "f": "Cookie set false", "code": "002" }
+    ]
+}

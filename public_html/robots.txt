@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /set_cookie/
-Disallow: /skip
-Disallow: /visit
-Sitemap: https://kaluga-kvest.online/sitemap.xml
