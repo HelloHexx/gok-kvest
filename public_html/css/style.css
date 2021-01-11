@@ -1,0 +1,45 @@
+/* #mapid {
+    height: 400px;
+} */
+
+.map {
+    height: 500px;
+    width: 70%;
+    -webkit-box-shadow: 28px 29px 32px 18px rgba(3, 82, 53, 1);
+    -moz-box-shadow: 28px 29px 32px 18px rgba(3, 82, 53, 1);
+    box-shadow: 28px 29px 32px 18px rgba(3, 82, 53, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-img {
+        width: 75%;
+        /* height: 1%; */
+    }
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../images/bg_klg.png);
+    backdrop-filter: blur(6px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    transform: scale(2);
+    padding: 10px;
+}
